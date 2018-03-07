@@ -66,9 +66,6 @@ public class InteractionExcel {
 
 
 
-
-
-
     @SuppressWarnings("deprecation")
     public static Iterator<Cell> readFromExcel(String file) throws IOException{
         HSSFWorkbook myExcelBook = new HSSFWorkbook(new FileInputStream(file));
@@ -80,27 +77,7 @@ public class InteractionExcel {
         myExcelBook.close();
         return cell;
 
-/*
-        while (cell.hasNext()){
-            System.out.println("значение в итераторе: " + cell.next());
-        }
-*/
-        /*
-        if(row.getCell(0).getCellType() == HSSFCell.CELL_TYPE_STRING){
-            String name = row.getCell(0).getStringCellValue();
-            System.out.println("name : " + name);
-        }
 
-        if(row.getCell(1).getCellType() == HSSFCell.CELL_TYPE_NUMERIC){
-            Date Settings = row.getCell(1).getDateCellValue();
-            System.out.println("Settings :" + Settings);
-        }
-        */
     }
-
-
-
-
-
 
 }

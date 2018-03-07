@@ -22,7 +22,6 @@ public class Advert {
     }
 
 
-
     public String getMetro() {
         return metro;
     }

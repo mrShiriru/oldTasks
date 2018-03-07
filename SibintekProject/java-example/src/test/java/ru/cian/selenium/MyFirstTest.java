@@ -55,6 +55,7 @@ public class MyFirstTest {
         driver.findElement(By.cssSelector("div.c-filters-field___2PXuG.undefined > div > div > span > input")).sendKeys(cells2.get(1));
         driver.findElement(By.cssSelector(" div.c-filters-form-buttons___2SF4G > button")).click();
 
+        //заглушка
         sleep(10000);
 
 
@@ -77,16 +78,12 @@ public class MyFirstTest {
 
             advertList.add(advert);
         }
+
+        //заглушка
         sleep(5000);
 
 
         InteractionExcel.writeIntoExcel("Adverts.xls",advertList );
-
-
-
-
-
-
     }
 
     @After
